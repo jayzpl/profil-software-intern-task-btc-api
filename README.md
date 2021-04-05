@@ -65,3 +65,5 @@ Digression:
 - If data for a given period of time and for a given currency exist in the database, the program will not download them again from the api.
 - I used the mongodb database because it can be useful when using json files.
 - Before testing the program, it is best to use the delete_all_data method from the db class to delete all data from the database.
+
+Made by J.Z.
