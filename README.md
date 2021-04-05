@@ -54,5 +54,13 @@ Only available for the export command:
   
 Examples:
 
-python script.py average-price-by-month --start-date=2020-01-01 --end-date=2020-06-01 --coin=usdt-tether
+- python script.py average-price-by-month --start-date=2020-01-01 --end-date=2020-06-01 --coin=usdt-tether
 Shows the average value of prices in the range from 2020-01-01 to 2020-06-01 for the usdt-tether currency.
+
+- python script.py export --start-date=2020-01-01 --end-date=2020-06-01 --format=json --file=file.json --coin=usdt-tether
+Exports data from 2020-01-01 to 2020-06-01 such as date and currency price to a file in the json format named file.json for usdt-tether currency
+
+Digression:
+- If data for a given period of time and for a given currency exist in the database, the program will not download them again from the api.
+- I used the mongodb database because it can be useful when using json files.
+- Before testing the program, it is best to use the delete_all_data method from the db class to delete all data from the database.
