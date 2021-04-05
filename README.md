@@ -44,6 +44,7 @@ Avialable parameters:
   Default: btc-bitcoin
 
 Only available for the export command:
+
 5. --format
   Sets the file format to be exported
   Default: csv
