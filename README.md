@@ -9,12 +9,12 @@ Required libraries:
 - Tests
 
 Available commands:
-python script.py <command> <paremeters>
+python script.py [command] [paremeters]
 
 1. python script.py --help
   Shows available commnads
   
-2. python script.py <command> --help
+2. python script.py [command] --help
   Shows available parameters for the command 
  
 3. python script.py average-price-by-month
@@ -29,7 +29,7 @@ python script.py <command> <paremeters>
 If no parameters are given, the command will be executed for default values
 
 Avialable parameters:
-1. <parameter>=<value>
+1. [parameter]=[value]
 
 2. --start-date
   Sets the start date of the time range
