@@ -8,7 +8,7 @@ class DB:
         """
         try:
             self.cluster = MongoClient(
-                "mongodb+srv://admin:1234@cluster0.biq6e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+                "")
             self.db = self.cluster["btc_db"]
             self.collection = self.db["btc_db"]
         except:
